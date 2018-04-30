@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+	outline: 0!important;
+	margin: 0;
+	padding: 0;
+	/* font-family: 'Cormorant Unicase',sans-serif; */
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	/* background-color: #fafafa; */
+	color: #fff;
+}
+
+body {
+	background-image: url('image/fsOyRP.jpg'); 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.not-footer {
+	min-height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.before-footer {
+	width: 99%;
+	height: 47px;
+	border: 1px /* solid #000 */;
+	float: left;
+}
+
+.wrapper {
+	background-image: url('image/5-compressor.jpg');
+	text-align: center;
+	width: 100%;
+	min-height: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content {
+	background: rgba(255,255,255,.92);
+	color: #000;
+	border-radius: 20px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	min-height: 30px;
+}
+
+
+#img {
+	width: 30%;
+	height: 60px;
+	height: auto;
+	border-radius: 100px;
+	margin-top: -62px;
+	border: 3px solid #f7f7f7;
+}
+
+#name {
+	display: block;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+#text {
+	width: 94%;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	font-size: 1.2em;
+	color: #000;
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+
+.bottom {
+	width: 100%;
+	height: auto;
+	font-size: 1em;
+	color: #000;
+}
+
+#site {
+	display: block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 1.2em;
+	background-image: linear-gradient(-120deg,#fff,#ff0000,#fff);
+	color: #fff;
+	margin-bottom: 1%;
+}
+
+.block {
+	width: 18%;
+	height: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 1em;
+	color: #c0c0c0;
+	margin-top: 1%;
+	margin-left: 11.5%;
+	float: left;
+	transition: all 0.5s ease;
+}
+
+.block:hover {
+	color: #000;
+	transition: all 0.5s ease;
+}
+
+.block:active {
+	color: #000;
+	transition: all 0.5s ease;
+}
+
+#inst {
+	width: 100%;
+	margin-top: 2%;
+	float: left;
+	border-top: 1px solid silver;
+	padding-top: 2%;
+	padding-bottom: 3%;
+}
+
+#razrab {
+	width: 6%;
+	right: 15px;
+	bottom: 15px;
+	float: right;
+	position: absolute;
+}
+
+#sms {
+	width: 100%;
+	height: auto;
+}
+
+#block-show {
+	position: absolute;
+	width: 10%;
+	right: 10px;
+	bottom: 115px;
+	min-height: 100px;
+	border-radius: 20px;
+	color: #000;
+	background-color: #f7f7f7;
+	padding: 0.5%;
+	display: none;
+}
+
+#rb {
+	display: block;
+	border-top: 1px solid silver;
+	background-image: linear-gradient(-120deg,#6900ff,#ff00c6,#6900ff);
+	border-radius: 6px;
+	transition: all 0.5s ease;
+}
+
+#rb:hover {
+	color: #fff;
+	transition: all 0.5s ease;
+}
+
+/*Слайдер фона*/
+
+.body_slides{
+	list-style:none;
+	margin:0;
+	padding:0;
+	z-index:-2; 
+	background:#000;}
+.body_slides,
+.body_slides:after{
+    position: fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;}
+.body_slides:after { 
+    content: '';
+	background: transparent url(images/pattern.png) repeat top left;}
+
+@-webkit-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
+@-moz-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
+.body_slides li{
+    width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+    background-size:cover;
+    background-repeat:none;
+	opacity:0;
+    -webkit-animation: anim_slides 18s linear infinite 0s;
+    -moz-animation: anim_slides 18s linear infinite 0s;
+    -o-animation: anim_slides 18s linear infinite 0s;
+    -ms-animation: anim_slides 18s linear infinite 0s;
+    animation: anim_slides 18s linear infinite 0s;
+}
+  
+.body_slides li:nth-child(1){
+background-image: url(image/chicago-america-chikago-205.jpg); 
+}
+.body_slides li:nth-child(2){
+-webkit-animation-delay: 15.0s;
+-moz-animation-delay: 6.0s;
+background-image: url(image/f40ca9250fd9ba2.jpg); 
+}
+.body_slides li:nth-child(3){
+-webkit-animation-delay: 30.0s;
+-moz-animation-delay: 12.0s;
+background-image: url(image/Hong-Kong-skyscraper-metropolis_1920x1080.jpg); 
+}
+
